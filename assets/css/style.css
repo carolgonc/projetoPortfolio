@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+:root {
+    --lightGrey: #DEDBD2;
+    --SoftPink: #da9f93;
+    --moderatePink: #b6465f;
+
+    --black-800: #171717;
+
+    --moderateBrown: #3f1e1a;
+    --brown: #2c0703;
+
+    --offWhite: #FFFCE6;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background: var(--lightGrey);
+    color: var(--brown);
+}
+
+/* Definindo as configurações de títulos e paragrafo */
+h1 {
+    color: var(--offWhite);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h2 {
+    padding: 1rem;
+    color: var(--brown);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+h3 {
+    padding: 1rem;
+    color: var(--offWhite);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding: 0.5rem 0;
+}
+
+/* Definindo as configurações do Flexbox */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#header_content {
+    height: 80px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: var(--moderatePink);
+    border-bottom: 1px solid var(--SoftPink);
+}
+
+#menu li {
+    display: inline;
+    padding: 1rem;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: var(--offWhite);
+    font-size: 20px;
+}
+
+#menu li a:hover {
+    color: var(--SoftPink);
+    text-decoration: underline;
+}
+
+#about {
+    flex-direction: column;
+    margin: 2rem auto;
+    width: 90%;
+}
+
+#conteudo {
+    flex-direction: row;
+    margin: 2rem auto;
+    width: 90%;
+}
+
+.img_profile {
+    width: 200px;
+}
+
+#video{
+    flex-direction: column;
+    margin: 2rem auto;
+    width: 90%;
+}
+
+footer {
+    flex-direction: column;
+    margin: 0;
+    padding: 2rem;
+    color: var(--offWhite);
+    background-color: var(--moderateBrown);
+    font-weight: bold;
+    text-align: center;
+}
+
+#redes_sociais {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0 0 0;
+    width: 320px;
+}
+
+.social_icon {
+    width: 4rem;
+    height: 4rem;
+    filter: brightness(0) 
+            saturate(100%) 
+            invert(100%) 
+            sepia(0%) 
+            saturate(7457%) 
+            hue-rotate(23deg) 
+            brightness(95%) 
+            contrast(87%);
+}
+
+.social_icon:hover {  
+    filter: brightness(0) 
+            saturate(100%) 
+            invert(65%) 
+            sepia(59%) 
+            saturate(2437%) 
+            hue-rotate(213deg) 
+            brightness(86%) 
+            contrast(88%);
+}
+
+#contact {
+    flex-direction: row;
+    gap: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border: none;
+}
+
+form label {
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 500;
+}
+
+form input,
+textarea {
+    margin: 0.5rem 0 1rem;
+    padding: 0.5rem;
+    border-radius: 1.25rem;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+    height: 5rem;
+}
+
+form span {
+    margin: 0 0 0.5rem 0.75rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: red;
+}
+
+form button {
+    text-align: center;
+    padding: 0.75rem 2rem;
+    background: var(--moderatePink);
+    border: 1px solid var(--SoftPink);
+    color: var(--offWhite);
+    border-radius: 0.75rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background: var(--SoftPink);
+}
+
+#mapa{
+    width: 480px;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#endereco > p{
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: 600;
+}
